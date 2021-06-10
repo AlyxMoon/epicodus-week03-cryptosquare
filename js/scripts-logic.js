@@ -1,0 +1,3 @@
+function cryptosquare (sentence) {
+  return ''
+}
