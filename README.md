@@ -17,4 +17,28 @@
 
 ## Tests
 
-### Describe: cryptosquare();
+### Describe: formatString();
+
+```
+Test: 'returns the characters of a string'
+Code: cryptosquare('hello')
+Expected: 'hello'
+```
+
+```
+Test: 'returns the characters and numbers of a string'
+Code: cryptosquare('world42')
+Expected: 'world42'
+```
+
+```
+Test: 'removes whitespace from a string'
+Code: cryptosquare('  something 16  ')
+Expected: 'something16'
+```
+
+```
+Test: 'removes non-alphanumeric characters from a string'
+Code: cryptosquare('string!@#$%^&*(),.\';:time0')
+Expected: 'stringtime0'
+```

@@ -28,7 +28,41 @@ function logResult (actual, expected) {
 }
 
 const tests = [
+  function () {
+    logDescription('formatString(): returns the characters of a string')
 
+    const actual = formatString('hello')
+    const expected = 'hello'
+
+    logResult(actual, expected)
+  },
+
+  function () {
+    logDescription('formatString(): returns the characters and numbers of a string')
+
+    const actual = formatString('world42')
+    const expected = 'world42'
+
+    logResult(actual, expected)
+  },
+
+  function () {
+    logDescription('formatString(): removes whitespace from a string')
+
+    const actual = formatString('  something 16  ')
+    const expected = 'something16'
+
+    logResult(actual, expected)
+  },
+
+  function () {
+    logDescription('formatString(): removes non-alphanumeric characters from a string')
+
+    const actual = formatString('string!@#$%^&*(),.\';:time0')
+    const expected = 'stringtime0'
+
+    logResult(actual, expected)
+  },
 ]
 
 function runTests () {

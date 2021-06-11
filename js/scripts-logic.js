@@ -1,3 +1,7 @@
+function formatString (string) {
+
+}
+
 function cryptosquare (sentence) {
-  return ''
+  sentence = formatString(sentence)
 }
