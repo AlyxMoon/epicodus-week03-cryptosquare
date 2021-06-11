@@ -27,6 +27,10 @@ function logResult (actual, expected) {
   }
 }
 
+function addSpacer () {
+  $('#output-tests li:last-child').addClass('py-3 bg-dark')
+}
+
 const tests = [
   function () {
     logDescription('formatString(): returns the characters of a string')
@@ -60,6 +64,89 @@ const tests = [
 
     const actual = formatString('string!@#$%^&*(),.\';:time0')
     const expected = 'stringtime0'
+
+    logResult(actual, expected)
+  },
+
+  addSpacer,
+
+  function () {
+    logDescription('getSmallestSquareLengthForArea(): returns correctly for 1')
+
+    const actual = getSmallestSquareLengthForArea(1)
+    const expected = 1
+
+    logResult(actual, expected)
+  },
+
+  function () {
+    logDescription('getSmallestSquareLengthForArea(): returns correctly for 2')
+
+    const actual = getSmallestSquareLengthForArea(2)
+    const expected = 2
+
+    logResult(actual, expected)
+  },
+
+  function () {
+    logDescription('getSmallestSquareLengthForArea(): returns correctly for 3')
+
+    const actual = getSmallestSquareLengthForArea(3)
+    const expected = 2
+
+    logResult(actual, expected)
+  },
+
+  function () {
+    logDescription('getSmallestSquareLengthForArea(): returns correctly for 4')
+
+    const actual = getSmallestSquareLengthForArea(4)
+    const expected = 2
+
+    logResult(actual, expected)
+  },
+
+  function () {
+    logDescription('getSmallestSquareLengthForArea(): returns correctly for 8')
+
+    const actual = getSmallestSquareLengthForArea(8)
+    const expected = 3
+
+    logResult(actual, expected)
+  },
+
+  function () {
+    logDescription('getSmallestSquareLengthForArea(): returns correctly for 9')
+
+    const actual = getSmallestSquareLengthForArea(9)
+    const expected = 3
+
+    logResult(actual, expected)
+  },
+
+  function () {
+    logDescription('getSmallestSquareLengthForArea(): returns correctly for 16')
+
+    const actual = getSmallestSquareLengthForArea(16)
+    const expected = 4
+
+    logResult(actual, expected)
+  },
+
+  function () {
+    logDescription('getSmallestSquareLengthForArea(): returns correctly for 17')
+
+    const actual = getSmallestSquareLengthForArea(17)
+    const expected = 5
+
+    logResult(actual, expected)
+  },
+
+  function () {
+    logDescription('getSmallestSquareLengthForArea(): returns correctly for 64')
+
+    const actual = getSmallestSquareLengthForArea(64)
+    const expected = 8
 
     logResult(actual, expected)
   },

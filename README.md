@@ -21,24 +21,80 @@
 
 ```
 Test: 'returns the characters of a string'
-Code: cryptosquare('hello')
+Code: formatString('hello')
 Expected: 'hello'
 ```
 
 ```
 Test: 'returns the characters and numbers of a string'
-Code: cryptosquare('world42')
+Code: formatString('world42')
 Expected: 'world42'
 ```
 
 ```
 Test: 'removes whitespace from a string'
-Code: cryptosquare('  something 16  ')
+Code: formatString('  something 16  ')
 Expected: 'something16'
 ```
 
 ```
 Test: 'removes non-alphanumeric characters from a string'
-Code: cryptosquare('string!@#$%^&*(),.\';:time0')
+Code: formatString('string!@#$%^&*(),.\';:time0')
 Expected: 'stringtime0'
+```
+
+### Describe: getSmallestSquareLengthForArea();
+
+```
+Test: 'returns correctly for 1'
+Code: getSmallestSquareLengthForArea(1)
+Expected: 1
+```
+
+```
+Test: 'returns correctly for 2'
+Code: getSmallestSquareLengthForArea(2)
+Expected: 2
+```
+
+```
+Test: 'returns correctly for 3'
+Code: getSmallestSquareLengthForArea(3)
+Expected: 2
+```
+
+```
+Test: 'returns correctly for 4'
+Code: getSmallestSquareLengthForArea(4)
+Expected: 2
+```
+
+```
+Test: 'returns correctly for 8'
+Code: getSmallestSquareLengthForArea(8)
+Expected: 3
+```
+
+```
+Test: 'returns correctly for 9'
+Code: getSmallestSquareLengthForArea(9)
+Expected: 3
+```
+
+```
+Test: 'returns correctly for 16'
+Code: getSmallestSquareLengthForArea(16)
+Expected: 4
+```
+
+```
+Test: 'returns correctly for 17'
+Code: getSmallestSquareLengthForArea(17)
+Expected: 5
+```
+
+```
+Test: 'returns correctly for 64'
+Code: getSmallestSquareLengthForArea(64)
+Expected: 8
 ```
