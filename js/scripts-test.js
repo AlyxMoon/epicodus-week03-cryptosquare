@@ -186,6 +186,33 @@ const tests = [
 
     logResult(actual, expected)
   },
+
+  function () {
+    logDescription('cryptosquare(): returns correctly with 5 characters')
+
+    const actual = cryptosquare('abcde')
+    const expected = 'adbec'
+
+    logResult(actual, expected)
+  },
+
+  function () {
+    logDescription('cryptosquare(): returns correctly with 10 characters')
+
+    const actual = cryptosquare('abcdefghij')
+    const expected = 'aeibfjcgdh'
+
+    logResult(actual, expected)
+  },
+
+  function () {
+    logDescription('cryptosquare(): returns correctly with 16 characters')
+
+    const actual = cryptosquare('abcdefghijklmnop')
+    const expected = 'aeimbfjncgkodhlp'
+
+    logResult(actual, expected)
+  },
 ]
 
 function runTests () {

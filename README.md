@@ -124,3 +124,21 @@ Test: 'returns correctly with 4 characters'
 Code: cryptosquare('abcd')
 Expected: 'acbd'
 ```
+
+```
+Test: 'returns correctly with 5 characters'
+Code: cryptosquare('abcde')
+Expected: 'adbec'
+```
+
+```
+Test: 'returns correctly with 10 characters'
+Code: cryptosquare('abcdefghij')
+Expected: 'aeibfjcgdh'
+```
+
+```
+Test: 'returns correctly with 16 characters'
+Code: cryptosquare('abcdefghijklmnop')
+Expected: 'aeimbfjncgkodhlp'
+```
