@@ -98,3 +98,29 @@ Test: 'returns correctly for 64'
 Code: getSmallestSquareLengthForArea(64)
 Expected: 8
 ```
+
+### Describe: cryptosquare();
+
+```
+Test: 'returns the character with a single-character string'
+Code: cryptosquare('a')
+Expected: 'a'
+```
+
+```
+Test: 'returns correctly with 2 characters'
+Code: cryptosquare('ab')
+Expected: 'ab'
+```
+
+```
+Test: 'returns correctly with 3 characters'
+Code: cryptosquare('abc')
+Expected: 'acb'
+```
+
+```
+Test: 'returns correctly with 4 characters'
+Code: cryptosquare('abcd')
+Expected: 'acbd'
+```

@@ -150,6 +150,42 @@ const tests = [
 
     logResult(actual, expected)
   },
+
+  function () {
+    logDescription('cryptosquare(): returns the character with a single-character string')
+
+    const actual = cryptosquare('a')
+    const expected = 'a'
+
+    logResult(actual, expected)
+  },
+
+  function () {
+    logDescription('cryptosquare(): returns correctly with 2 characters')
+
+    const actual = cryptosquare('ab')
+    const expected = 'ab'
+
+    logResult(actual, expected)
+  },
+
+  function () {
+    logDescription('cryptosquare(): returns correctly with 3 characters')
+
+    const actual = cryptosquare('abc')
+    const expected = 'acb'
+
+    logResult(actual, expected)
+  },
+
+  function () {
+    logDescription('cryptosquare(): returns correctly with 4 characters')
+
+    const actual = cryptosquare('abcd')
+    const expected = 'acbd'
+
+    logResult(actual, expected)
+  },
 ]
 
 function runTests () {
