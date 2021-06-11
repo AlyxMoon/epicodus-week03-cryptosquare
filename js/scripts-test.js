@@ -151,6 +151,8 @@ const tests = [
     logResult(actual, expected)
   },
 
+  addSpacer,
+
   function () {
     logDescription('cryptosquare(): returns the character with a single-character string')
 
