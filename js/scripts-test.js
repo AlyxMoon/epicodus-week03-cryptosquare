@@ -200,7 +200,7 @@ const tests = [
     logDescription('cryptosquare(): returns correctly with 10 characters')
 
     const actual = cryptosquare('abcdefghij')
-    const expected = 'aeibfjcgdh'
+    const expected = 'aeibf jcgdh'
 
     logResult(actual, expected)
   },
@@ -209,7 +209,7 @@ const tests = [
     logDescription('cryptosquare(): returns correctly with 16 characters')
 
     const actual = cryptosquare('abcdefghijklmnop')
-    const expected = 'aeimbfjncgkodhlp'
+    const expected = 'aeimb fjncg kodhl p'
 
     logResult(actual, expected)
   },

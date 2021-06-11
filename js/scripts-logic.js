@@ -46,11 +46,14 @@ function cryptosquare (sentence) {
       if (!grid[row][col]) break
 
       stringResult += grid[row][col]
-      if (index && ++index % 5) {
+      index++
+
+      if (!(index % 5)) {
         stringResult += ' '
+        index = 0
       }
     }
   }
 
-  return stringResult
+  return stringResult.trim()
 }
